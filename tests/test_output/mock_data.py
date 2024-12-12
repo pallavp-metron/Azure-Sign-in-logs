@@ -1,0 +1,45 @@
+mock_sign_in_response = {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditLogs/signIns",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/auditLogs/signIns?$filter=createdDateTime+ge+2024-12-01T00%3a00%3a00Z+and+createdDateTime+le+2024-12-10T00%3a00%3a00Z&$top=1&$skiptoken=9df6397afa25a664a813e4658580c67882dc123fbfd7ac0cc73434c8712306a1",
+    "value": [
+        {
+            "id": "66ea54eb-6301-4ee5-be62-ff5a759b0100",
+            "createdDateTime": "2023-12-01T16:03:35Z",
+            "userDisplayName": "Test Contoso",
+            "userPrincipalName": "testaccount1@contoso.com",
+            "userId": "26be570a-ae82-4189-b4e2-a37c6808512d",
+            "appId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "appDisplayName": "Graph explorer",
+            "ipAddress": "131.107.159.37",
+            "clientAppUsed": "Browser",
+            "correlationId": "d79f5bee-5860-4832-928f-3133e22ae912",
+            "conditionalAccessStatus": "notApplied",
+            "isInteractive": True,
+            "riskDetail": "none",
+            "riskLevelAggregated": "none",
+            "riskLevelDuringSignIn": "none",
+            "riskState": "none",
+            "riskEventTypes": [],
+            "riskEventTypes_v2": [],
+            "resourceDisplayName": "Microsoft Graph",
+            "resourceId": "00000003-0000-0000-c000-000000000000",
+            "status": {"errorCode": 0, "failureReason": "Other.", "additionalDetails": None},
+            "deviceDetail": {
+                "deviceId": "",
+                "displayName": "",
+                "operatingSystem": "Windows 10",
+                "browser": "Edge 80.0.361",
+                "isCompliant": False,
+                "isManaged": False,
+                "trustType": ""
+            },
+            "location": {
+                "city": "Redmond",
+                "state": "Washington",
+                "countryOrRegion": "US",
+                "geoCoordinates": {"altitude": None, "latitude": 11, "longitude": 11}
+            },
+            "appliedConditionalAccessPolicies": []
+        }
+    ]
+}
